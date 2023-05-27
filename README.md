@@ -19,13 +19,13 @@ import cv2
 from pytesseract import Output
 from PIL import Image
 ```
-2. Load an image file. _(Put the image file in the directory where tess-extract.py is located and just enter the image name, no path needed)._
+2. Load an image file. _(Put the image file in the directory where `tess-extract.py` is located and just enter the image name, no path needed)._
 ```python
 img = cv2.imread("path\\to\\image.jpg")
 # or like this when the image is in the root directory
 img = cv2.imread("image.jpg")
 ```
-3. tess-extract.py has three main functions. Find them at the bottom of the file and uncomment the function you want to run.
+3. `tess-extract.py` has three main functions. Find them at the bottom of the file and uncomment the function you want to run.
 ```python
 # This function extracts the text from the image and prints it to the console.
 def extract_txt_to_console():
@@ -37,6 +37,9 @@ def box_around_word(confidence):
 ```
 ## Snippets
 The function `"extract_txt_to_console()"` is available in the snippets.py file as a separate and fully functional program.
+
+## Jupyter Notebook
+Ther is a `tess-extract.ipynb` file. It shows some functions of the pytesseract library. Feel free to view `tess-extract.ipynb` here on GitHub.
 
 ## Run in Console
 It is possible to run the program in the console directly. Here are some useful commands:
